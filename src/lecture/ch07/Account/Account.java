@@ -11,7 +11,16 @@ public class Account {
     private String accountNum; // 앞에 0이 들어오는 경우, 숫자가 아닌 값이 들어가는 경우
     private String owner;
     private long balance; // 잔액
-
+    
+    
+    // constructor
+    public Account(String accountNum, String owner, long balance) {
+        this.accountNum = accountNum; // this = 객체의 property / + 상속 시, super = 부모
+        this.owner = owner;
+        this.balance = balance;
+    }
+    
+    // method
     // 입금
     public long deposit(long money) {
         return balance += money;
@@ -35,12 +44,5 @@ public class Account {
     // 계좌 정보 출력
     public void printAccountInformation() {
         System.out.printf("accountNum : %s, owner : %s, balance : %d\n", accountNum, owner, balance);
-    }
-
-    // constructor
-    public Account(String accountNum, String owner, long balance) {
-        this.accountNum = accountNum; // this = 객체의 property / + 상속 시, super = 부모
-        this.owner = owner;
-        this.balance = balance;
     }
 }

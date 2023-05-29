@@ -18,11 +18,11 @@ public class Vehicle {
         return fuelcap * mpg;
     }
 
-    // constructor / overroding = 같은 이름, 다른 매개변수의 메소드, 생성자 가능
+    // constructor
     public Vehicle() {
     }
 
-    public Vehicle(int passenger, int fuelcap, int mpg) {
+    public Vehicle(int passenger, int fuelcap, int mpg) { // overriding
         this.passenger = passenger;
         this.fuelcap = fuelcap;
         this.mpg = mpg;

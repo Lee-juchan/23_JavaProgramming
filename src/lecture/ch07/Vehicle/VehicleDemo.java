@@ -8,7 +8,7 @@ public class VehicleDemo {
         int range_miniVan = miniVan.range();
         int range_sportCar = sportCar.range();
 
-        System.out.printf("miniVan range : %d\n", range_miniVan);
-        System.out.printf("sportCar range : %d\n", range_sportCar);
+        System.out.printf("[miniVan] range : %d\n", range_miniVan);
+        System.out.printf("[sportCar] range : %d\n", range_sportCar);
     }
 }
