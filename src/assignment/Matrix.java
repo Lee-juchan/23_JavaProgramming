@@ -4,6 +4,7 @@
     @brief : 행렬 곱셈 연산
     @details : 행렬 생성, 행렬 곱, 행렬 출력 함수 구현
 */
+package assignment;
 
 public class Matrix {
 

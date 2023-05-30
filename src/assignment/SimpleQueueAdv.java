@@ -1,9 +1,10 @@
 /*
-    #assignment 03 / 23.04.21 leejuchan
+#assignment 03 / 23.04.21 leejuchan
 
-    @brief : 큐 구현
-    @details : + 큐가 다 차면, 큐 길이를 2배로 늘리고 동작하도록
+@brief : 큐 구현
+@details : + 큐가 다 차면, 큐 길이를 2배로 늘리고 동작하도록
 */
+package assignment;
 
 import java.util.Scanner;
 import java.util.Random;
