@@ -8,7 +8,6 @@
 package lecture.ch07.Vehicle;
 
 public class Vehicle {
-    // property
     private int passenger;
     private int fuelcap;
     private int mpg; // mile per gas
