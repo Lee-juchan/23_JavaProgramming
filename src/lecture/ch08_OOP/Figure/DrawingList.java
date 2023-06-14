@@ -4,6 +4,8 @@
 
 package lecture.ch08_OOP.Figure;
 
+import lecture.ch09_EnumAndCollection.Generic.Printable.Printable;
+
 public class DrawingList {
     private Shape[] shapeList = null;
 
@@ -19,6 +21,11 @@ public class DrawingList {
     public void paint() {
         for (Paintable p : shapeList) {
             p.paint();
+        }
+    }
+    public void print() {
+        for (Printable p : shapeList) {
+            p.print();
         }
     }
 }

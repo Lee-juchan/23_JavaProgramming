@@ -6,15 +6,22 @@
 
 package lecture.ch08_OOP.Figure;
 
-public abstract class Shape implements Paintable {
+import lecture.ch09_EnumAndCollection.Generic.Printable.Printable;
+
+public abstract class Shape implements Paintable, Printable {
     protected String color = "NULL";
 
     public void setColor(String color) {
         this.color = color;
     }
+
     @Override
     public void paint() {
         System.out.printf("(%s) : painted %s\n", this.getClass().getName(), this.color);
+    }
+    @Override
+    public void print() {
+        System.out.printf("(%s) : printing... %s\n", this.getClass().getName(), this.color);
     }
 
     public abstract void draw();
